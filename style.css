@@ -1,0 +1,171 @@
+
+html {
+    background: linear-gradient(135deg, #FF6B6B, #6B6BFF);
+    background-size: 100% 100%;
+}
+
+.main-name{
+    font-size: 30pt;
+    color: #FFDA6B;
+}
+
+.profile-picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #007BFF;
+}
+
+.summary-container,
+.education-container {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-container p,
+.education-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.experience-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.experience-container-item {
+    flex-grow: 1;
+    max-width: 500px;
+    background: linear-gradient(45deg, #FFDA6B, #6B6BFF);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.experience-container-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-container-item li {
+    margin-bottom: 10px;
+}
+
+.experience-container-item > p{
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Nav bar */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #b700ff65;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 200px;
+
+}
+
+.nav-link:hover {
+    background-color: #b700ff;
+}
+
+footer{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 26pt;
+    color: orange;
+}
+
+.languages-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.programming-languages, .speaking-languages {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #FFDA6B, #6B6BFF);
+    background-color: orange;
+    border-color: indigo;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 20pt;
+    color: indigo;
+}
+
+.languages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.languages-list li {
+    margin: 5px 0;
+}
+
+@media (max-width: 1250px) {
+    .experience-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-container-item {
+        max-width: 40%;
+    }
+
+    .languages-container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+
+    .languages-container *{
+        border-radius: 100%;
+    }
+}

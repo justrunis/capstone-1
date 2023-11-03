@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+TAS+Beginner&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Justinas Runevičius</h1>
-    <img src="./assets/images/profile-picture.jfif" height="200" alt="">
+    <h1 class="main-name">Justinas Runevičius</h1>
+    <img class="profile-picture" src="./assets/images/profile-picture.jfif" height="200" alt="profile-picture">
     <hr>
-    <h2>Summary</h2>
-    <p>I am a recent graduate of Kaunas University of Technology with experience in various web and game related projects</p>
+    <h2 class="section-title">Summary</h2>
+    <div class="summary-container">
+        <p>I am a recent graduate of Kaunas University of Technology with experience in various web and game related projects</p>
+    </div>    
     <hr>
-    <h2>Education</h2>
-    <ul>
-        <li>High school diploma (2015-2019)</li>
-        <li>Bachelor of Computer Science, Computer Science - Kaunas University of Technology (2019-2023)</li>
-    </ul>
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+        <p>High school diploma (2015-2019)</p>
+        <p>Bachelor of Computer Science, Computer Science - Kaunas University of Technology (2019-2023)</p>
+    </div>
     <hr>
-    <h2>Work experience</h2>
-    <ul>
-        <li>
-            <h3>Internship</h3>
-        </li>
-        <ul>
-            <li>2023, February 1st. - 2023, May 31st.
-                <ul>
-                    <li>Creating Geolocation plugin for Moodle system</li>
-                    <li>Creating QR code game plugin for Moodle system</li>
-                    <li>Creating Clue Quiz plugin for Moodle system</li>
-                </ul>
-            </li>
-        </ul>
-        <li>
-            <h3>Software engineer in Kaunas Univeristy of Technology</h3>
-        </li>
-        <ul>
-            <li>2023, June 1st. - Present
-                <ul>
-                    <li>Rewriting web page using Drupal9</li>
-                    <li>Fixing various bugs</li>
-                    <li>Adding new features requested by the client</li>
-                    <li>Writing documetation about the web page</li>
-                    <li>Creating UML diagrams</li>
-                </ul>
-            </li>
-        </ul>
-    </ul>
-    <hr>
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming languages
+    <h2 class="section-title">Work experience</h2>
+    <div class="experience-container">
+        <div class="experience-container-item">
+            <p class="subtitle">Internship</p>
+            <p>2023, February 1st. - 2023, May 31st.</p>
             <ul>
+                <li>Creating Geolocation plugin for Moodle system</li>
+                <li>Creating QR code game plugin for Moodle system</li>
+                <li>Creating Clue Quiz plugin for Moodle system</li>
+            </ul>
+        </div>
+        <div class="experience-container-item">
+            <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
+
+            <p>2023, June 1st. - Present</p>
+            <ul>
+                <li>Rewriting web page using Drupal9</li>
+                <li>Fixing various bugs</li>
+                <li>Adding new features requested by the client</li>
+                <li>Writing documetation about the web page</li>
+                <li>Creating UML diagrams</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2 class="section-title">Languages</h2>
+    <div class="languages-container">
+        <div class="programming-languages">
+            <p class="subtitle">Programming languages</p>
+            <ul class="languages-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -62,21 +66,22 @@
                 <li>Java</li>
                 <li>C++</li>
             </ul>
-        </li>
-        <li>Speaking languages
-            <ul>
-                <li>Lithuanian(native)</li>
+        </div>
+        <div class="speaking-languages">
+            <p class="subtitle">Speaking languages</p>
+            <ul class="languages-list">
+                <li>Lithuanian (native)</li>
                 <li>English</li>
                 <li>Russian</li>
             </ul>
-        </li>
-    </ul>
+        </div>
+    </div>
     <hr>
-    <h2>Other</h2>
-    <ul>
-        <li><a href="./public/about.html">My hobbies</a></li>
-        <li><a href="./public/contact.html">Contacts</a></li>
-        <li><a href="https://github.com/justrunis">My GitHub account</a></li>
+    <h2 class="section-title">Other</h2>
+    <ul class="nav-list">
+        <li><a class="nav-link" href="./public/about.html">My hobbies</a></li>
+        <li><a class="nav-link" href="./public/contact.html">Contacts</a></li>
+        <li><a class="nav-link" href="https://github.com/justrunis">My GitHub account</a></li>
     </ul>
 </body>
 <footer>
