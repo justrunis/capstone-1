@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,100 +8,217 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+TAS+Beginner&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+TAS+Beginner&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <h1 class="main-name">Justinas Runevičius</h1>
-    <div class="picture-container">
-        <img class="profile-picture" src="./assets/images/profile-picture.jfif" height="200" alt="profile-picture">
-    </div>
-    <hr>
-    <h2 class="section-title">Summary</h2>
-    <div class="summary-container">
-        <p>I am a recent graduate of Kaunas University of Technology with a Bachelor's 
-            degree in Computer Science. Throughout my academic journey, 
-            I have gained a solid foundation in various aspects of computer 
-            science, including programming, algorithms, and software development.</p>
 
-        <p>During my time at the university, I had the opportunity to work on 
-            a wide range of web and game-related projects, both as part of 
-            my coursework and independently. These projects have allowed me 
-            to apply my knowledge in practical settings and develop valuable skills 
-            in web development and game design.</p>
-        <p>
-            I am passionate about continuing to explore the dynamic and ever-evolving 
-            fields of web and game development. My education and practical experience have 
-            equipped me with the skills and knowledge to tackle new challenges and contribute 
-            effectively to future projects and opportunities.
-        </p>
-    </div>    
-    <hr>
-    <h2 class="section-title">Education</h2>
-    <div class="education-container">
-        <p>High school diploma (2015-2019)</p>
-        <p>Bachelor of Computer Science, Computer Science - Kaunas University of Technology (2019-2023)</p>
-    </div>
-    <hr>
-    <h2 class="section-title">Work experience</h2>
-    <div class="experience-container">
-        <div class="experience-container-item">
-            <p class="subtitle">Internship</p>
-            <p>2023, February 1st. - 2023, May 31st.</p>
-            <ul>
-                <li>Creating Geolocation plugin for Moodle system</li>
-                <li>Creating QR code game plugin for Moodle system</li>
-                <li>Creating Clue Quiz plugin for Moodle system</li>
-            </ul>
-        </div>
-        <div class="experience-container-item">
-            <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
+<body class="gradient-background">
+    <section class="navigation">
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" aria-disabled="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#summary" aria-disabled="true">Summary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" aria-disabled="true">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work-experience" aria-disabled="true">Work experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" aria-disabled="true">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies" aria-disabled="true">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts" aria-disabled="true">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/justrunis" class="nav-link" aria-disabled="true">GitHub
+                                account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
 
-            <p>2023, June 1st. - Present</p>
-            <ul>
-                <li>Rewriting web page using Drupal9</li>
-                <li>Fixing various bugs</li>
-                <li>Adding new features requested by the client</li>
-                <li>Writing documetation about the web page</li>
-                <li>Creating UML diagrams</li>
-            </ul>
+    <section class="name-section">
+        <h1 class="main-name display-4">Justinas Runevičius</h1>
+        <div class="picture-container">
+            <img class="profile-picture img-fluid" src="./assets/images/profile-picture.jfif" alt="profile-picture"
+                style="max-height: 200px;">
         </div>
-    </div>
+    </section>
     <hr>
-    <h2 class="section-title">Languages</h2>
-    <div class="languages-container">
-        <div class="programming-languages">
-            <p class="subtitle">Programming languages</p>
-            <ul class="languages-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-            </ul>
+    <section id="summary">
+
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="main-name display-4">Summary</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                            <path
+                                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                        </svg>
+                    </div>
+                    <p>I am a recent graduate of Kaunas University of Technology with a Bachelor's
+                        degree in Computer Science. Throughout my academic journey,
+                        I have gained a solid foundation in various aspects of computer
+                        science, including programming, algorithms, and software development.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-braces" viewBox="0 0 16 16">
+                            <path
+                                d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
+                        </svg>
+                    </div>
+                    <p>During my time at the university, I had the opportunity to work on
+                        a wide range of web and game-related projects, both as part of
+                        my coursework and independently. These projects have allowed me
+                        to apply my knowledge in practical settings and develop valuable skills
+                        in web development and game design.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                            class="bi bi-backpack" viewBox="0 0 16 16">
+                            <path
+                                d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+                            <path
+                                d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0Zm1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z" />
+                        </svg>
+                    </div>
+                    <p>I am passionate about continuing to explore the dynamic and ever-evolving
+                        fields of web and game development. My education and practical experience have
+                        equipped me with the skills and knowledge to tackle new challenges and contribute
+                        effectively to future projects and opportunities.</p>
+
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="speaking-languages">
-            <p class="subtitle">Speaking languages</p>
-            <ul class="languages-list">
-                <li>Lithuanian (native)</li>
-                <li>English</li>
-                <li>Russian</li>
-            </ul>
+
+
+        <h2 class="section-title display-4">Summary</h2>
+        <div class="summary-container">
+            <p class="lead">I am a recent graduate of Kaunas University of Technology with a Bachelor's
+                degree in Computer Science. Throughout my academic journey,
+                I have gained a solid foundation in various aspects of computer
+                science, including programming, algorithms, and software development.</p>
+
+            <p class="lead">During my time at the university, I had the opportunity to work on
+                a wide range of web and game-related projects, both as part of
+                my coursework and independently. These projects have allowed me
+                to apply my knowledge in practical settings and develop valuable skills
+                in web development and game design.</p>
+
+            <p class="lead">
+                I am passionate about continuing to explore the dynamic and ever-evolving
+                fields of web and game development. My education and practical experience have
+                equipped me with the skills and knowledge to tackle new challenges and contribute
+                effectively to future projects and opportunities.
+            </p>
         </div>
-    </div>
+    </section>
     <hr>
-    <h2 class="section-title">Other</h2>
-    <ul class="nav-list">
-        <li><a class="nav-link" href="./public/about.html">My hobbies</a></li>
-        <li><a class="nav-link" href="./public/contact.html">Contacts</a></li>
-        <li><a class="nav-link" href="https://github.com/justrunis">My GitHub account</a></li>
-    </ul>
+    <section id="education">
+        <h2 class="section-title display-4">Education</h2>
+        <div class="education-container">
+            <p class="lead">High school diploma (2015-2019)</p>
+            <p class="lead">Bachelor of Computer Science, Computer Science - Kaunas University of Technology (2019-2023)
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section id="work-experience">
+        <h2 class="section-title">Work experience</h2>
+        <div class="experience-container">
+            <div class="experience-container-item">
+                <p class="subtitle">Internship</p>
+                <p>2023, February 1st. - 2023, May 31st.</p>
+                <ul>
+                    <li>Creating Geolocation plugin for Moodle system</li>
+                    <li>Creating QR code game plugin for Moodle system</li>
+                    <li>Creating Clue Quiz plugin for Moodle system</li>
+                </ul>
+            </div>
+            <div class="experience-container-item">
+                <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
+
+                <p>2023, June 1st. - Present</p>
+                <ul>
+                    <li>Rewriting web page using Drupal</li>
+                    <li>Fixing various bugs</li>
+                    <li>Adding new features requested by the client</li>
+                    <li>Writing documetation about the web page</li>
+                    <li>Creating UML diagrams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skills">
+                <p class="subtitle">Programming languages</p>
+                <ul class="skills-list first-skills-list">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <p class="subtitle">Frameworks</p>
+                <ul class="skills-list">
+                    <li>Drupal 10</li>
+                    <li>Moodle</li>
+                    <li>Unity</li>
+                    <li>ReactJs</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <p class="subtitle">Speaking languages</p>
+                <ul class="skills-list">
+                    <li>Lithuanian (native)</li>
+                    <li>English</li>
+                    <li>Russian</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <footer>
-    <p>© Justinas Runevičius. All rights reserved.</p>
+    <div>© Justinas Runevičius. All rights reserved.</div>
 </footer>
+
 </html>
