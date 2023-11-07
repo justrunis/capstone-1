@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="icon" href="./assets/images/portfolio_logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +22,11 @@
 
 <body>
     <section class="navigation">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark gradient-background" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-                    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -59,24 +61,22 @@
             </div>
         </nav>
     </section>
-    <section class="name-section">
+    <section class="name-section ">
         <div class="container px-4 py-2"></div>
         <h1 class="main-name display-4">Justinas Runevičius</h1>
         <div class="picture-container">
-            <img class="profile-picture img-fluid" src="./assets/images/profile-picture.jfif" alt="profile-picture"
+            <img class="profile-picture img-fluid mb-4" src="./assets/images/profile-picture.jfif" alt="profile-picture"
                 style="max-height: 200px;">
         </div>
         </div>
     </section>
     <hr>
     <section id="summary">
-
         <div class="container px-4 py-2">
             <h2 class="main-name display-4">Summary</h2>
             <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                    <div class="feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3 rounded">
                         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
                             class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                             <path
@@ -102,7 +102,7 @@
                     <p>During my time at the university, I had the opportunity to work on
                         a wide range of web and game-related projects, both as part of
                         my coursework and independently. These projects have allowed me
-                        to apply my knowledge in practical settings and develop valuable skills
+                        to apply my knowledge in practical settings and develop valuable cards
                         in web development and game design.</p>
                 </div>
                 <div class="feature col">
@@ -118,7 +118,7 @@
                     </div>
                     <p>I am passionate about continuing to explore the dynamic and ever-evolving
                         fields of web and game development. My education and practical experience have
-                        equipped me with the skills and knowledge to tackle new challenges and contribute
+                        equipped me with the cards and knowledge to tackle new challenges and contribute
                         effectively to future projects and opportunities.</p>
                 </div>
             </div>
@@ -126,36 +126,40 @@
     </section>
     <hr>
     <section id="work-experience">
-        <h2 class="main-name display-4">Work experience</h2>
-        <div class="experience-container">
-            <div class="card experience-container-item pt-5 pb-5">
-                <p class="subtitle">Internship</p>
-                <p>2023, February 1st. - 2023, May 31st.</p>
-                <ul>
-                    <li>Creating Geolocation plugin for Moodle system</li>
-                    <li>Creating QR code game plugin for Moodle system</li>
-                    <li>Creating Clue Quiz plugin for Moodle system</li>
-                </ul>
-            </div>
-            <div class="card experience-container-item pt-5 pb-5">
-                <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
-                <p>2023, June 1st. - Present</p>
-                <ul>
-                    <li>Rewriting web page using Drupal</li>
-                    <li>Fixing various bugs</li>
-                    <li>Adding new features requested by the client</li>
-                    <li>Writing documetation about the web page</li>
-                    <li>Creating UML diagrams</li>
-                </ul>
+        <div class="container mt-4s">
+            <h2 class="main-name display-4">Work experience</h2>
+            <div class="cards-container ">
+                <div class="cards pt-5 pb-5">
+                    <p class="subtitle">Internship</p>
+                    <br>
+                    <p class="card-text"><b>2023, February 1st. - 2023, May 31st.</b></p>
+                    <br>
+                    <p class="card-text">Creating Geolocation plugin for Moodle system</li>
+                    <p class="card-text">Creating QR code game plugin for Moodle system</li>
+                    <p class="card-text" li>Creating Clue Quiz plugin for Moodle system</li>
+                </div>
+                <div class="cards-container ">
+                    <div class="cards pt-5 pb-5 align-items-stretch">
+                        <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
+                        <br>
+                        <p class="card-text"><b>2023, June 1st. - Present</b></p>
+                        <br>
+                        <p class="card-text">Rewriting web page using Drupal</p>
+                        <p class="card-text">Fixing various bugs</p>
+                        <p class="card-text">Adding new features requested by the client</p>
+                        <p class="card-text">Writing documetation about the web page</p>
+                        <p class="card-text">Creating UML diagrams</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <hr>
     <section id="skills">
-        <div class="container mt-4s">
+        <div class="container mt-4">
             <h2 class="main-name display-4">Skills</h2>
-            <div class="skills-container">
-                <div class="skills pt-5 pb-5">
+            <div class="cards-container">
+                <div class="cards pt-5 pb-5">
                     <p class="subtitle">Programming languages</p>
                     <div>
                         <img class="img-fluid m-2" width="100" height="100" src="./assets/images/html_logo.png"
@@ -173,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="skills pt-5 pb-5">
+                <div class="cards pt-5 pb-5">
                     <p class="subtitle">Frameworks</p>
                     <div>
                         <img class="img-fluid m-2" width="100" height="100" src="./assets/images/drupal_logo.png"
@@ -189,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="skills pt-5 pb-5">
+                <div class="cards pt-5 pb-5">
                     <p class="subtitle">Speaking languages</p>
                     <div>
                         <img class="img-fluid m-2 border" src="./assets/images/lithuanian_flag.png"
@@ -205,9 +209,9 @@
     <section id="hobbies">
         <div class="container mt-4">
             <h1 class="main-name display-4">My Hobbies</h1>
-            <div class="row align-items-center justify-content-center g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-sm-1">
-                <div class="col-md-4">
-                    <div class="card" style="min-height: 350px;">
+            <div class="row justify-content-center g-4 row-cols-1 row-cols-lg-3 row-cols-sm-2" style="display: flex; align-items: stretch;">
+                <div class="col-md-6 cards-container">
+                    <div class="cards p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
                             fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
                             <path
@@ -225,8 +229,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card" style="min-height: 350px;">
+                <div class="col-md-6 cards-container">
+                    <div class="cards p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
                             fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
                             <path
@@ -244,42 +248,52 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                <div class="col-md-6 cards-container">
+                    <div class="cards p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
+                            fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                            <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+                            <path
+                                d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
+                            <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
                         <div class="card-body">
                             <h5 class="card-title subtitle">Anime</h5>
-                            <p class="card-text">Description of Hobby 3.</p>
+                            <p class="card-text">Since my teenage years i was really fond of watching various animes.
+                                Some
+                                of my favourites are: Attack on Titan, Tokyo Ghoul, Death Note and Jujutsu Kaisen</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                <div class="col-md-6 col-3 cards-container">
+                    <div class="cards p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
+                            fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                        </svg>
                         <div class="card-body">
                             <h5 class="card-title subtitle">Movies</h5>
-                            <p class="card-text">Description of Hobby 3.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
-                        <div class="card-body">
-                            <h5 class="card-title subtitle">Youtube</h5>
-                            <p class="card-text">Description of Hobby 3.</p>
+                            <p class="card-text">Movies are a diverse collection of cinematic masterpieces,
+                                each holding a special place in my heart and transporting me to different worlds.
+                                Some of my favourite movies include: Marvel SAGA, Harry Potter movies, </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <footer class="my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="https://github.com/justrunis" class="nav-link px-2 text-body-secondary">GitHub account</a></li>
+              </ul>
+              <div>© Justinas Runevičius. All rights reserved.</div>
+            </footer>
+          </div>
+    </section>
 
 </body>
-<footer>
-    <div>© Justinas Runevičius. All rights reserved.</div>
-</footer>
-
 </html>
