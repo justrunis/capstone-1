@@ -37,14 +37,28 @@
     }
 }
 
-nav.navbar{
-    --bs-tertiary-bg-rgb: rgba(255, 255, 255, 0);
+#skills > div > div > div:nth-child(3) > div > img{
+    width:  150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#skills > div > div > div:nth-child(2) > div > img{
+
 }
 
 .main-name {
     font-size: 30pt;
     color: var(--text-color);
     text-align: center;
+    margin: 2rem;
+}
+
+.card-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .picture-container {
@@ -167,19 +181,28 @@ footer {
 .skills-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .skills-list * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
 }
 
 .first-skills-list {
     column-count: 2;
 }
 
-@media (max-width: 1250px) {
+.skills-list img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+@media (max-width: 991px) {
 
     .summary-container,
     .education-container {
@@ -219,5 +242,12 @@ footer {
 
     .skills-list {
         column-count: 1;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

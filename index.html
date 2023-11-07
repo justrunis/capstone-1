@@ -13,21 +13,24 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </head>
 
-<body class="gradient-background">
+<body>
     <section class="navigation">
-        <nav class="navbar  navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarsExample09">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home" aria-disabled="true">Home</a>
+                            <a class="nav-link" href="./index.html" aria-disabled="true">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#summary" aria-disabled="true">Summary</a>
@@ -56,23 +59,24 @@
             </div>
         </nav>
     </section>
-
     <section class="name-section">
+        <div class="container px-4 py-2"></div>
         <h1 class="main-name display-4">Justinas Runevičius</h1>
         <div class="picture-container">
             <img class="profile-picture img-fluid" src="./assets/images/profile-picture.jfif" alt="profile-picture"
                 style="max-height: 200px;">
         </div>
+        </div>
     </section>
     <hr>
     <section id="summary">
 
-        <div class="container px-4 py-5" id="featured-3">
+        <div class="container px-4 py-2">
             <h2 class="main-name display-4">Summary</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                        class="feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3 rounded">
                         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
                             class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                             <path
@@ -116,48 +120,15 @@
                         fields of web and game development. My education and practical experience have
                         equipped me with the skills and knowledge to tackle new challenges and contribute
                         effectively to future projects and opportunities.</p>
-
-                    </a>
                 </div>
             </div>
-        </div>
-
-
-        <h2 class="section-title display-4">Summary</h2>
-        <div class="summary-container">
-            <p class="lead">I am a recent graduate of Kaunas University of Technology with a Bachelor's
-                degree in Computer Science. Throughout my academic journey,
-                I have gained a solid foundation in various aspects of computer
-                science, including programming, algorithms, and software development.</p>
-
-            <p class="lead">During my time at the university, I had the opportunity to work on
-                a wide range of web and game-related projects, both as part of
-                my coursework and independently. These projects have allowed me
-                to apply my knowledge in practical settings and develop valuable skills
-                in web development and game design.</p>
-
-            <p class="lead">
-                I am passionate about continuing to explore the dynamic and ever-evolving
-                fields of web and game development. My education and practical experience have
-                equipped me with the skills and knowledge to tackle new challenges and contribute
-                effectively to future projects and opportunities.
-            </p>
-        </div>
-    </section>
-    <hr>
-    <section id="education">
-        <h2 class="section-title display-4">Education</h2>
-        <div class="education-container">
-            <p class="lead">High school diploma (2015-2019)</p>
-            <p class="lead">Bachelor of Computer Science, Computer Science - Kaunas University of Technology (2019-2023)
-            </p>
         </div>
     </section>
     <hr>
     <section id="work-experience">
-        <h2 class="section-title">Work experience</h2>
+        <h2 class="main-name display-4">Work experience</h2>
         <div class="experience-container">
-            <div class="experience-container-item">
+            <div class="card experience-container-item pt-5 pb-5">
                 <p class="subtitle">Internship</p>
                 <p>2023, February 1st. - 2023, May 31st.</p>
                 <ul>
@@ -166,9 +137,8 @@
                     <li>Creating Clue Quiz plugin for Moodle system</li>
                 </ul>
             </div>
-            <div class="experience-container-item">
+            <div class="card experience-container-item pt-5 pb-5">
                 <p class="subtitle">Software engineer in Kaunas Univeristy of Technology</p>
-
                 <p>2023, June 1st. - Present</p>
                 <ul>
                     <li>Rewriting web page using Drupal</li>
@@ -182,40 +152,131 @@
     </section>
     <hr>
     <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skills">
-                <p class="subtitle">Programming languages</p>
-                <ul class="skills-list first-skills-list">
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                </ul>
-            </div>
-            <div class="skills">
-                <p class="subtitle">Frameworks</p>
-                <ul class="skills-list">
-                    <li>Drupal 10</li>
-                    <li>Moodle</li>
-                    <li>Unity</li>
-                    <li>ReactJs</li>
-                </ul>
-            </div>
-            <div class="skills">
-                <p class="subtitle">Speaking languages</p>
-                <ul class="skills-list">
-                    <li>Lithuanian (native)</li>
-                    <li>English</li>
-                    <li>Russian</li>
-                </ul>
+        <div class="container mt-4s">
+            <h2 class="main-name display-4">Skills</h2>
+            <div class="skills-container">
+                <div class="skills pt-5 pb-5">
+                    <p class="subtitle">Programming languages</p>
+                    <div>
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/html_logo.png"
+                            alt="html_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/js_logo.png"
+                            alt="js_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/php_icon.png"
+                            alt="php_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/cs_logo.png"
+                            alt="cs_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/python_logo.png"
+                            alt="python_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/cpp_logo.png"
+                            alt="cpp_logo">
+                    </div>
+                </div>
+
+                <div class="skills pt-5 pb-5">
+                    <p class="subtitle">Frameworks</p>
+                    <div>
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/drupal_logo.png"
+                            alt="drupal_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/moodle_logo.png"
+                            alt="moodle_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/unity_logo.png"
+                            alt="unity_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/react_logo.png"
+                            alt="react_logo">
+                        <img class="img-fluid m-2" width="100" height="100" src="./assets/images/dotnet_logo.png"
+                            alt="dotnet_logo">
+                    </div>
+                </div>
+
+                <div class="skills pt-5 pb-5">
+                    <p class="subtitle">Speaking languages</p>
+                    <div>
+                        <img class="img-fluid m-2 border" src="./assets/images/lithuanian_flag.png"
+                            alt="lithuanian_flag">
+                        <img class="img-fluid m-2 border" src="./assets/images/uk_flag.png" alt="uk_flag">
+                        <img class="img-fluid m-2 border" src="./assets/images/russian_flag.png" alt="russian_flag">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <hr>
+    <section id="hobbies">
+        <div class="container mt-4">
+            <h1 class="main-name display-4">My Hobbies</h1>
+            <div class="row align-items-center justify-content-center g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-sm-1">
+                <div class="col-md-4">
+                    <div class="card" style="min-height: 350px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
+                            fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                            <path
+                                d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title subtitle">Music</h5>
+                            <p class="card-text">Music is one of my hobbies that i like to do when i have some free
+                                time.
+                                I can play the piano and a cello and sometimes i post some music played by my on my <a
+                                    href="https://www.youtube.com/@skullcrushertv3362">youtube channel</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="min-height: 350px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="card-img-top mt-5" width="50" height="100"
+                            fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                            <path
+                                d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                            <path
+                                d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title subtitle">Video games</h5>
+                            <p class="card-text">On my free time i often play video games with my friends. I have also
+                                tryed to create some games in my time in university. Some of my projects include a <a
+                                    href="https://github.com/JokubasKv/RainbowSweep">VR game</a> and a <a
+                                    href="https://github.com/JokubasKv/TestGame"> First Person Shooter</a> game</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                        <div class="card-body">
+                            <h5 class="card-title subtitle">Anime</h5>
+                            <p class="card-text">Description of Hobby 3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                        <div class="card-body">
+                            <h5 class="card-title subtitle">Movies</h5>
+                            <p class="card-text">Description of Hobby 3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                        <div class="card-body">
+                            <h5 class="card-title subtitle">Youtube</h5>
+                            <p class="card-text">Description of Hobby 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 <footer>
     <div>© Justinas Runevičius. All rights reserved.</div>
