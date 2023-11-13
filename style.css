@@ -1,42 +1,8 @@
 :root {
-    --primary-color: #FFF;
-    --secondary-color: #6C757D;
-    --third-color: #000;
 
-    --primary-box-color: #E8E8E8;
-    --secondary-box-color: #6C757D;
-
+    --header-color: #e4f9f5;
+    --hover-color: #66bfbf;
     --text-color: #11999e;
-}
-
-.text-bg-primary {
-    color: #fff !important;
-    background-color: rgba(var(--primary-color-rgb), var(--bs-bg-opacity, 1)) !important;
-}
-
-.gradient-background {
-    background: linear-gradient(300deg, var(--primary-color), var(--secondary-color), var(--third-color));
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-}
-
-* {
-    margin:0;
-    padding:0;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 /* Flag resize */
@@ -66,23 +32,24 @@ div>div>div:nth-child(3)>div>img {
 #hero,
 .navbar,
 #footer{
-    background-color: #e4f9f5;
+    background-color: var(--header-color);
+}
+
+.footer-content{
+    padding-bottom: 30px;
 }
 
 .navbar a:hover{
-    color: var(--text-color);
+    color: var(--hover-color);
 }
 
-#footer{
-    background-color: #66bfbf;
-}
 
 #footer a{
     color: #000;
 }
 
 #footer a:hover{
-    color: var(--primary-color);
+    color: var(--hover-color);
 }
 
 .card-container {
@@ -135,7 +102,7 @@ footer {
 }
 
 .cards-container > .cards {
-    border: 1px solid #a7a6a6;
+    border: 1px solid black;
     border-radius: 1rem;
     text-align: center;
     margin-bottom: 50px;
