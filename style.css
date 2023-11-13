@@ -6,7 +6,7 @@
     --primary-box-color: #E8E8E8;
     --secondary-box-color: #6C757D;
 
-    --text-color: #000000;
+    --text-color: #11999e;
 }
 
 .text-bg-primary {
@@ -53,6 +53,38 @@ div>div>div:nth-child(3)>div>img {
     margin: 2rem;
 }
 
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+#hero,
+.navbar,
+#footer{
+    background-color: #e4f9f5;
+}
+
+.navbar a:hover{
+    color: var(--text-color);
+}
+
+#footer{
+    background-color: #66bfbf;
+}
+
+#footer a{
+    color: #000;
+}
+
+#footer a:hover{
+    color: var(--primary-color);
+}
+
 .card-container {
     display: flex;
     gap: 2rem;
@@ -86,10 +118,6 @@ div>div>div:nth-child(3)>div>img {
     font-family: 'Libre Baskerville', serif;
 }
 
-h2 {
-    text-align: center;
-}
-
 footer {
     text-align: center;
 }
@@ -120,7 +148,7 @@ footer {
 .subtitle {
     font-weight: bold;
     font-size: 20pt;
-    color: var(--text-color);
+    color: var(--text-color)!important;
 }
 
 .cards-list img {
@@ -148,5 +176,11 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .top-cloud {
+        top: 70px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
